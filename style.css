@@ -13,7 +13,86 @@ body{
   background: rgb(233, 233, 233);
 }
 
-nav{
+/*TOP NAV BEGINS*/
+.topnav {
+  background-color: #fff; 
+  padding: 5px 10px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 10; 
+  margin-left: 81px;
+}
+
+.tabs {
+  display: flex; 
+  justify-content: space-between; 
+  background-color: #fff; 
+  width: 30;
+  padding: 3px 8px;
+  margin-left: 0; 
+}
+.plusicon{
+  height: 5px;
+  width: 10px;
+}
+.home-icon{
+  width: 0px;
+  height: 10px;
+}
+.tabs a {
+  text-decoration: none; 
+  color: #666; 
+  padding: 5px 10px; 
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.tabs a.active {
+  color:#5E5ADB ;
+  background-color: #F7F6FD;  
+}
+.tabs a.active::after {
+  content: '\00D7'; /* Unicode for a cross symbol */
+  margin-left: 200px; /* Adjust space between the text and the cross symbol */
+  color: #5E5ADB; 
+  font-size: 20px
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+}
+
+.actions a {
+  color: #5E5ADB; 
+  padding: 0 10px; 
+  font-size: 18px; 
+}
+
+.actions button {
+  background-color: #fff;
+  color: #5E5ADB; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  padding: 5px 10px; 
+  margin-left: 10px;
+  cursor: pointer; 
+}
+.last-settings-icon{
+  width: 150px;
+}
+
+/*TOP NAV ends*/
+
+nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -68,4 +147,3 @@ a:hover{
     font-size: 35px;
     bottom: 5px;
 }
-
