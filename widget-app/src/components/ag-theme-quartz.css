@@ -1,0 +1,17 @@
+.ag-theme-quartz {
+  --ag-header-height: 30px;
+  --ag-foreground-color: #474747;
+  --ag-background-color: var(--custom-background-color, white); /* Use a custom variable with a default value */
+  --ag-header-foreground-color: #5E5ADB;
+  --ag-header-background-color: var(--custom-background-color, white); /* Use the same variable for header background */
+  --ag-font-size: 17px;
+  --ag-borders:none;
+  --ag-font-family: inter;
+  --ag-wrapper-border-radius: 5%;
+  --ag-borders-secondary: none;
+}
+
+.ag-theme-quartz .ag-header-cell {
+  font-weight: bold;
+  font-size: 17px;
+}
