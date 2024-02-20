@@ -21,7 +21,7 @@ const CustomTable = ({backgroundColor,footerColor,type}) => {
 
   const rowStyle = { borderBottom: 'none' };
 
-  // set background color and space below even rows again, this looks bad, should be using CSS classes
+  
   const getRowStyle = params => {
     if (params.node.rowIndex === 4) {
       return { color: footerColor, fontWeight: 'bold'};
@@ -36,7 +36,7 @@ const CustomTable = ({backgroundColor,footerColor,type}) => {
   ]);
   const [chartOptions] = useState({
     theme: "ag-default",
-    // Data: Data to be displayed in the chart
+    
     data: [
       { asset: "Stocks", amount: 60000 },
       { asset: "Bonds", amount: 40000 },
@@ -44,7 +44,7 @@ const CustomTable = ({backgroundColor,footerColor,type}) => {
       { asset: "Real Estate", amount: 5000 },
       { asset: "Commodities", amount: 3000 },
     ],
-    // Series: Defines which chart type and data to use
+    
     series: [
       {
           type: 'donut',
