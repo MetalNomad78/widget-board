@@ -21,12 +21,12 @@ const TopNavWidget = () => {
     {
       key: '2',
       label: '14d',
-      children: 'Content of Tab Pane 2',
+      children: <CustomTable backgroundColor="white" footerColor="black" type="grid" />,
     },
     {
       key: '3',
       label: '30d',
-      children: 'Content of Tab Pane 3',
+      children: <CustomTable backgroundColor="white" footerColor="black" type="grid" />,
     },
   ];
 
