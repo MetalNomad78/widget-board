@@ -1,0 +1,14 @@
+/* Your existing CSS */
+.redBorder{
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.redBorder .ant-tabs-ink-bar {
+    background-color:#5E5ADB; /* Set the background color to red when .redBorder is present */
+  }
+  
+  /* Your other styles... */
+  
